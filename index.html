@@ -1,0 +1,120 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>翎筑官方主页</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary JavaScript plugins) -->
+<script type='text/javascript' src="js/jquery-1.11.1.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="shortcut icon" type="image/x-icon" href="images/logo2.ico" media="screen" />
+<!-- Custom Theme files -->
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="lingzhu,翎筑" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- start menu -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+
+<script src="js/simpleCart.min.js"> </script>
+<script src="js/responsiveslides.min.js"></script>
+<script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	nav: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+	
+  </script>
+<script type="text/javascript" src="js/move-top.js"></script>
+       <script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
+</head>
+<body>
+<!-- header -->
+<div class="header_bg">
+<div class="container">
+	<div class="header">
+	<div class="head-t">
+		
+		<p><a class="btn btn-danger btn-lg" href="index.html" role="button">翎筑健康</a></p>
+
+			<div class="clearfix"> </div>
+	</div>	
+	
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+      <ul class="nav nav-pills ">
+        <li class="active"><a href="index.html">官方主页 </a></li>
+        
+		<li><a href="contact.html">联系方式</a></li>
+      </ul>
+      <hr />
+    
+
+  
+
+		</div>
+		<!-- start header menu -->
+	</div>
+</div>
+
+<!-- start banner -->
+<div class="banner">
+	<div class="container">
+
+		<div class="col-md-12 ">
+			<p>翎筑介绍。<br/>
+				位于中国南京市。<br/>
+				主要业务为医学技术、医药技术研发及技术转让；医药信息咨询、健康保健信息咨询。<br/>
+				<br/>
+				服务理念。。。。<br/>
+				<br/>
+				<br/>
+				</p>
+				
+			<div class="clearfix"> </div>
+		</div>
+		<br/>
+
+		<div class="clearfix"> </div>
+	</div>
+</div>
+<!-- end banner -->
+
+
+
+<hr />
+	<div class="container">
+		<p>Copyright &copy; 2017.翎筑健康 All rights reserved.</p>
+	</div>
+<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 0;"></span> <span id="toTopHover" style="opacity: 0;"> </span></a>
+</body>
+</html>

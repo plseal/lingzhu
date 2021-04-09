@@ -1,19 +1,10 @@
-FROM ubuntu:latest
-MAINTAINER docker@ekito.fr
+FROM ubuntu:20.10 #バージョンは本のものではなく現時点の最新にしております。
 
-RUN apt-get update && apt-get -y install cron
+RUN apt update
+RUN apt install -y cron
 
-# Add crontab file in the cron directory
-ADD crontab /etc/cron.d/hello-cron
+COPY task.sh /usr/local/bin/
+COPY cron-example /etc/cron.d/
+RUN chmod 0644 /etc/cron.d/cron-example
 
-# Give execution rights on the cron job
-RUN chmod 0644 /etc/cron.d/hello-cron
-
-# Apply cron job
-RUN crontab /etc/cron.d/hello-cron
-
-# Create the log file to be able to run tail
-RUN touch /var/log/cron.log
-
-# Run the command on container startup
-CMD cron && tail -f /var/log/cron.log
+CMD ["cron", "-f"]
